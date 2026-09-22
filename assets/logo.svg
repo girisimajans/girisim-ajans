@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 520" role="img" aria-labelledby="t d">
+<title id="t">Girişim Ajans</title>
+<desc id="d">Girişim Ajans için kırmızı fırça formunda amblem ve tipografik logo</desc>
+<g fill="none" stroke="#b71922" stroke-linecap="round">
+  <path d="M263 25 C142 39 54 120 43 244 C31 374 144 421 238 369 C301 334 309 258 270 218 C245 193 215 188 187 198" stroke-width="10"/>
+  <path d="M252 31 C144 56 75 128 59 234 C41 348 129 396 218 369" stroke-width="3" opacity=".55"/>
+  <path d="M192 125 C178 116 163 118 153 130" stroke-width="8"/>
+  <path d="M197 120 C181 111 162 114 149 128" stroke-width="2" opacity=".65"/>
+  <path d="M184 199 C155 213 143 241 145 270" stroke-width="5"/>
+  <path d="M189 206 C163 216 151 239 151 262" stroke-width="2" opacity=".55"/>
+</g>
+<rect x="40" y="380" width="240" height="72" fill="#b71922"/>
+<text x="160" y="435" text-anchor="middle" fill="#fff" font-family="Arial Narrow,Arial,sans-serif" font-size="49" font-weight="900" letter-spacing="1">GİRİŞİM</text>
+<text x="160" y="499" text-anchor="middle" fill="#242424" font-family="Arial, sans-serif" font-size="39" font-weight="700" letter-spacing="19">ajans</text>
+</svg>
