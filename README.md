@@ -11,7 +11,7 @@ Girişim Ajans için hazırlanan modern, responsive, tek sayfalık kurumsal web 
 
 ## İletişim
 - Web: https://www.girisimajans.com.tr/
-- E-posta: ercan@girisimajans.com
+- E-posta: ercan@girisimajans.com.tr
 - Telefon: +90 551 1001 101
 - Konum: Ankara, Türkiye
 
