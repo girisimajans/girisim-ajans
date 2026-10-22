@@ -167,30 +167,30 @@
     <section class="gallery section-pad" id="gallery">
       <div class="section-head reveal">
         <div><div class="section-kicker">/ GALERİ</div><h2>İşin her<br>aşamasındayız.</h2></div>
-        <p>Portfolyo görselleri eklendikçe bu alan gerçek proje fotoğraflarıyla güncellenecek.</p>
+        <p>Bir kategoriye tıklayın. Galeri tam ekran açılır; oklarla veya klavyedeki yön tuşlarıyla çalışmalar arasında gezebilirsiniz.</p>
       </div>
 
       <div class="work-grid">
-        <article class="work-card work-large reveal">
-          <div class="work-image image-1"><span>01</span><strong>Kurumsal Kimlik</strong></div>
-          <div class="work-meta"><span>Logo • Amblem • Katalog • Matbu Ürünler</span><b>↗</b></div>
-        </article>
-        <article class="work-card reveal">
-          <div class="work-image image-2"><span>02</span><strong>Dijital Baskı</strong></div>
-          <div class="work-meta"><span>Poster • Foreks • Fotoblok • Rollup</span><b>↗</b></div>
-        </article>
-        <article class="work-card reveal">
-          <div class="work-image image-3"><span>03</span><strong>Indoor / Outdoor</strong></div>
-          <div class="work-meta"><span>Tabela • Cephe • Araç Giydirme</span><b>↗</b></div>
-        </article>
-        <article class="work-card work-wide reveal">
-          <div class="work-image image-4"><span>04</span><strong>Fuar & Sergileme</strong></div>
-          <div class="work-meta"><span>Stand Tasarımı • Kurulum • Sergileme Sistemleri</span><b>↗</b></div>
-        </article>
-        <article class="work-card work-wide reveal">
-          <div class="work-image image-5"><span>05</span><strong>Web & Dijital</strong></div>
-          <div class="work-meta"><span>Web Tasarım • Domain • Hosting • Kurumsal E-Mail</span><b>↗</b></div>
-        </article>
+        <button class="work-card work-large gallery-card reveal" type="button" data-gallery="identity" aria-label="Kurumsal Kimlik galerisini aç">
+          <div class="work-image image-1"><span>01</span><strong>Kurumsal Kimlik</strong><em>Galeriyi Aç ↗</em></div>
+          <div class="work-meta"><span>Logo • Amblem • Katalog • Matbu Ürünler</span><b>4 çalışma</b></div>
+        </button>
+        <button class="work-card gallery-card reveal" type="button" data-gallery="print" aria-label="Dijital Baskı galerisini aç">
+          <div class="work-image image-2"><span>02</span><strong>Dijital Baskı</strong><em>Galeriyi Aç ↗</em></div>
+          <div class="work-meta"><span>Poster • Foreks • Fotoblok • Rollup</span><b>4 çalışma</b></div>
+        </button>
+        <button class="work-card gallery-card reveal" type="button" data-gallery="outdoor" aria-label="Indoor Outdoor galerisini aç">
+          <div class="work-image image-3"><span>03</span><strong>Indoor / Outdoor</strong><em>Galeriyi Aç ↗</em></div>
+          <div class="work-meta"><span>Tabela • Cephe • Araç Giydirme</span><b>4 çalışma</b></div>
+        </button>
+        <button class="work-card work-wide gallery-card reveal" type="button" data-gallery="fair" aria-label="Fuar ve Sergileme galerisini aç">
+          <div class="work-image image-4"><span>04</span><strong>Fuar & Sergileme</strong><em>Galeriyi Aç ↗</em></div>
+          <div class="work-meta"><span>Stand Tasarımı • Kurulum • Sergileme Sistemleri</span><b>4 çalışma</b></div>
+        </button>
+        <button class="work-card work-wide gallery-card reveal" type="button" data-gallery="web" aria-label="Web ve Dijital galerisini aç">
+          <div class="work-image image-5"><span>05</span><strong>Web & Dijital</strong><em>Galeriyi Aç ↗</em></div>
+          <div class="work-meta"><span>Web Tasarım • Domain • Hosting • Kurumsal E-Mail</span><b>4 çalışma</b></div>
+        </button>
       </div>
     </section>
 
@@ -247,6 +247,35 @@
     <p>© <span id="year"></span> Girişim Ajans. Tüm hakları saklıdır.</p>
     <a class="footer-up" href="#top">Yukarı ↑</a>
   </footer>
+
+
+  <div class="gallery-modal" id="galleryModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="galleryModalTitle">
+    <div class="gallery-modal-backdrop" data-gallery-close></div>
+    <div class="gallery-modal-panel">
+      <div class="gallery-modal-top">
+        <div>
+          <span class="gallery-modal-kicker">GİRİŞİM AJANS / GALERİ</span>
+          <h3 id="galleryModalTitle">Galeri</h3>
+        </div>
+        <button class="gallery-close" type="button" aria-label="Galeriyi kapat" data-gallery-close>×</button>
+      </div>
+
+      <div class="gallery-stage">
+        <button class="gallery-arrow gallery-prev" type="button" aria-label="Önceki görsel">←</button>
+        <div class="gallery-slide" id="gallerySlide" role="img" aria-label=""></div>
+        <button class="gallery-arrow gallery-next" type="button" aria-label="Sonraki görsel">→</button>
+      </div>
+
+      <div class="gallery-modal-bottom">
+        <div>
+          <strong id="gallerySlideTitle">Çalışma</strong>
+          <span id="gallerySlideSubtitle">Girişim Ajans</span>
+        </div>
+        <div class="gallery-counter"><span id="galleryCurrent">1</span> / <span id="galleryTotal">4</span></div>
+      </div>
+      <div class="gallery-dots" id="galleryDots" aria-label="Galeri görsel seçimi"></div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
